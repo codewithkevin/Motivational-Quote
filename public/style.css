@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Orelega One', cursive;
+    background-image: url('https://fonts.googleapis.com');
+    min-height: 100vh;
 }
