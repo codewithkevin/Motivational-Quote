@@ -8,6 +8,22 @@
 
 body {
     font-family: 'Orelega One', cursive;
-    background-image: url('https://fonts.googleapis.com');
-    min-height: 100vh;
+    background-image: url(./image/backgoud.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+
+header {
+    font-size: 1.2rem;
+}
+
+header, main {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
