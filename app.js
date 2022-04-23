@@ -10,6 +10,10 @@ app.use('/public', express.static('public'));
 
 app.get('/', (req, res) => {
     
+    res.sendFile(__dirname + '/signup.html');
+})
+
+app.post('/', (req, res) => {
     const url = "https://api.adviceslip.com/advice"
 
     https.get(url, (response) => {
@@ -21,14 +25,11 @@ app.get('/', (req, res) => {
            const dat = advice.slip.advice;
            console.log(dat);
            
-           const item = document.getElementById
-
-            res.sendFile(__dirname + "/index.html");
+           res.sendFile(__dirname + "/index.html");
         });
 
     });
-
-})
+});
 
 
 
