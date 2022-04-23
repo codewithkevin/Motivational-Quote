@@ -8,5 +8,13 @@ button.addEventListener('click', display);
 
 // Functions
 function display() {
-    text.innerHTML = 'Hello World';
+    const url = "https://api.adviceslip.com/advice";
+
+    fetch(url)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            text.innerText = data.slip.advice;
+        })
 }
