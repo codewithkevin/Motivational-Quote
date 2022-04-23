@@ -20,11 +20,11 @@ app.get('/', (req, res) => {
            const advice = JSON.parse(data);
            const dat = advice.slip.advice;
            console.log(dat);
+            
         });
-
+        
     });
 
-    res.send("HEllo");
 })
 
 
