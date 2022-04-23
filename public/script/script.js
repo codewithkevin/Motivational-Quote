@@ -3,7 +3,7 @@ const text = document.getElementById('text');
 const button = document.getElementById('button');
 
 // Event Listeners
-text.addEventListener('click', display);
+button.addEventListener('click', display);
 
 
 // Functions
