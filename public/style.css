@@ -57,5 +57,6 @@ main button{
 
 main button:hover{
     opacity: 13;
-    background-color: black;
+    background-color: dodgerblue;
+    color: black;
 }
