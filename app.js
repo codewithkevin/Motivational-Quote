@@ -20,9 +20,12 @@ app.get('/', (req, res) => {
            const advice = JSON.parse(data);
            const dat = advice.slip.advice;
            console.log(dat);
-            
+           
+           const item = document.getElementById
+
+            res.sendFile(__dirname + "/index.html");
         });
-        
+
     });
 
 })
