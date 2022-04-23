@@ -9,26 +9,11 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use('/public', express.static('public'));
 
 app.get('/', (req, res) => {
-    
     res.sendFile(__dirname + '/signup.html');
 })
 
 app.post('/', (req, res) => {
-    const url = "https://api.adviceslip.com/advice"
-
-    https.get(url, (response) => {
-
-        console.log(response.statusCode);
-
-        response.on('data', (data) => {
-           const advice = JSON.parse(data);
-           const dat = advice.slip.advice;
-           console.log(dat);
-           
-           res.sendFile(__dirname + "/index.html");
-        });
-
-    });
+    
 });
 
 
